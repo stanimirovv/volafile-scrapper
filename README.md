@@ -30,7 +30,7 @@ The script accounts for already downloaded attachments.
 ## Synopsis
 
 ```
-TODO
+phantomjs scrapper.js <room id> | node downloader.js <dir to save files in>
 ```
 
 ## Installation
