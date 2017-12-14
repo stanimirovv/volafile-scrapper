@@ -1,0 +1,20 @@
+{
+  "name": "volifile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "downloader.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "download-file": "^0.1.5",
+    "get-stdin": "^5.0.1",
+    "package.json": "^2.0.1",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
