@@ -50,6 +50,8 @@ brew install node
 
 * npm should be installed with node
 
+Once you've cloned the repo run
+```npm install``` to install the required packages
 
 ## It's not a bug, it's a feature (known issues)
 
