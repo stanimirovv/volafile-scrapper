@@ -17,11 +17,11 @@ getStdin().then(str => {
    urls = getURLsFromHTML( str );
    // Volafile the links in the room lead to a page with HTML,
    // not to the picture. we need to resolve them to the paths to the picture
-   resolvedURLs = resolveURLs( urls );
+   downloadURLs = computeDownloadURLs( urls );
    // ensure you don't download files which are already present
-   urlsToDownload = filterDownloadedFiles( resolvedURLs, downloadDir ); 
+   newFileURLs = filterDownloadedFiles( downloadURLs, downloadDir );
    // download new files
-   downloadFiles( urlsToDownload, downloadDir );
+   downloadFiles( newFileURLs, downloadDir );
    console.log( 'Done.' );
 });
 
@@ -37,7 +37,7 @@ function getURLsFromHTML( html ) {
    return urls;
 }
 
-function resolveURLs ( urls ) {
+function computeDownloadURLs ( urls ) {
    var resolvedURLs = [];
    for ( i = 0; i < urls.length; i++ ) {
       var parsed;
