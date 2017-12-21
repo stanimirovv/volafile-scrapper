@@ -35,6 +35,7 @@ phantomjs scrapper.js <room id> | node downloader.js <dir to save files in>
 
 ## Installation
 You need, node and npm installed
+The version of node should support ES6.
 
 Linux (apt):
 ```
